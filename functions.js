@@ -60,8 +60,9 @@ let shawerma = false
  * BONUS: use iteration method `.find()`
  ****************************************************************/
 function getChannelByName(channelName, channels) {
- if (channels.iclude(channelName)) {
- return channelName};
+    
+
+ return channels.find(channel => channel.name ===channelName );
   
   }
     
@@ -77,7 +78,11 @@ function getChannelByName(channelName, channels) {
  * BONUS: use iteration methods `.find()` and `.some()`
  ****************************************************************/
 function getChannelByVideoTitle(videoTitle, channels) {
-  // Your code here
+if (videos.some(videoTitle)) {
+  return channels.find(channel => channel.videos === videoTitle )
+  
+}
+  
 }
 // console.log(getChannelByVideoTitle("The Universal S", channels));
 
